@@ -6,7 +6,6 @@
  * Time: 16:55
  */
 
-namespace Tools;
 
 
 class Querie
@@ -29,7 +28,16 @@ class Querie
     }
     public function selectMethod($sql)
     {
+        if (!empty($sql) > 0 || !empty($sql)) {
 
+
+            $result = $this->db->prepare($sql);
+            $result->execute();
+            return $result->fetchAll();
+        }
+       else{
+            return false;
+       }
     }
 
     public function __destruct()
