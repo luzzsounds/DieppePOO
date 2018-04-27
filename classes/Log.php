@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Dell
- * Date: 26/04/2018
- * Time: 11:59
- */
+
 
 class Log
 {

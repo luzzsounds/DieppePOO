@@ -40,8 +40,10 @@ class Querie
        }
     }
 
-    public function __destruct()
-    {
-        unset($this->db);
-    }
+
+}
+
+//public function __destruct()
+{
+    //unset($this->db);
 }
